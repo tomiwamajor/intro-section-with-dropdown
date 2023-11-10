@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1231px) {
   nav {
-    width: 100rem;
+    width: 34rem;
   }
 
   .links {
@@ -21,11 +21,11 @@
 }
 
 @media only screen and (max-width: 1025px) {
-  nav {
-    margin: 0;
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .nav-link {
+    margin: 0 1.5rem;
+  }
+  .registration button {
+    padding: 0.8rem 1.6rem;
   }
 
   .container {
@@ -41,12 +41,6 @@
 
   .section-img {
     grid-row: 1/2;
-  }
-}
-
-@media only screen and (max-width: 839px) {
-  .links {
-    transform: translateX(0);
   }
 }
 
@@ -145,11 +139,14 @@
     font-size: 1.5rem;
   }
 }
-@media (min-width: 1025px) {
-  .nav-link {
-    margin: 0 1.5rem;
-  }
-  .registration button {
-    padding: 0.8rem 1.6rem;
+
+@media only screen and (max-width: 839px) {
+  /* .links {
+    transform: translateX(0);
+  } */
+
+  .nav-links .nav-link {
+    text-align: center;
+    margin-right: 0;
   }
 }
