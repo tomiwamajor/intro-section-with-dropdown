@@ -1,6 +1,7 @@
 @media only screen and (max-width: 1231px) {
   nav {
     width: 34rem;
+    min-height: 100vh;
   }
 
   .links {
