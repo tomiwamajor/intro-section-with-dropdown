@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+}
+
+/* =================navigation bar========== */
+
+ul {
+  list-style-type: none;
+}
+nav a {
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+}
+
+header {
+  min-height: 75px;
+  padding: 1.3rem 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+header .menu {
+  position: fixed;
+  top: 1.3rem;
+  right: 1rem;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.menu .close-menu {
+  display: none;
+}
+
+header.open .open-menu {
+  display: none;
+}
+
+header.open .close-menu {
+  display: initial;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 65vw;
+  height: 100vh;
+  background: hsl(0, 0%, 98%);
+  transform: translateX(100%);
+  transition: all 0.3s ease-in;
+  display: flex;
+  text-align: left;
+  z-index: 1;
+}
+
+header.open nav {
+  transform: translateX(0%);
+}
+
+nav .nav-links {
+  margin-top: 75px;
+  flex: 1;
+}
+
+.nav-links .nav-link {
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-link > a {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: block;
+  transition: all 0.3s ease-in;
+}
+
+.nav-link > a:hover {
+  background: hsla(0, 0%, 88%, 0.5);
+}
+
+.nav-link .dropdown-list {
+  display: none;
+  padding: 0.5rem 1.5rem;
+  overflow-y: hidden;
+}
+
+.nav-link.link-open .dropdown-list {
+  display: block;
+}
+
+.dropdown-list .dropdown-link a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.dropdown-link a:hover {
+  background: hsla(0, 0%, 78%, 0.5);
+}
+
+.nav-link a span {
+  margin-right: 0.75rem;
+}
+
+.nav-link .arrow-up {
+  display: none;
+}
+
+.nav-link.link-open .arrow-up {
+  display: initial;
+}
+
+.nav-link.link-open .arrow-down {
+  display: none;
+}
+
+nav .registration {
+  display: none;
+}
+
+/* =====================container=========================== */
+
+/* container */
+.container {
+  width: 100rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+}
+
+/* left-grid */
+.section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-head {
+  font-size: 6.8rem;
+  color: hsl(0, 0%, 8%);
+  padding-bottom: 4rem;
+}
+
+.content-paragraph {
+  font-size: 1.9rem;
+  color: hsl(0, 0%, 41%);
+  padding-bottom: 3rem;
+}
+
+.btn {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  font-size: 1.9rem;
+  text-decoration: none;
+  padding: 2rem 4rem;
+  transform: translateX(-13rem);
+  border-radius: 0.9rem;
+  margin-bottom: 7rem;
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+}
+
+.content-partners {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* right-grid */
+.section-img img {
+  width: 100%;
+}

@@ -1,0 +1,155 @@
+@media only screen and (max-width: 1231px) {
+  nav {
+    width: 100rem;
+  }
+
+  .links {
+    transform: translateX(-10rem);
+  }
+
+  .container {
+    width: 90rem;
+  }
+
+  .content-head {
+    font-size: 6.2rem;
+  }
+
+  .btn {
+    transform: translateX(-11rem);
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  nav {
+    margin: 0;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .container {
+    /* margin: 0; */
+    grid-template-columns: 1fr;
+    width: 80rem;
+    max-width: 95%;
+  }
+
+  .btn {
+    transform: translateX(0);
+  }
+
+  .section-img {
+    grid-row: 1/2;
+  }
+}
+
+@media only screen and (max-width: 839px) {
+  .links {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 850px) {
+  body {
+    background: var(--white);
+  }
+  body .overlay {
+    display: none;
+    opacity: 0;
+  }
+  header {
+    padding: 1.5rem 3rem;
+    justify-content: center;
+  }
+  header .logo {
+    margin-top: 0.5rem;
+  }
+  header .menu {
+    display: none;
+  }
+  nav {
+    position: initial;
+    max-width: 80vw;
+    height: auto;
+    background: transparent;
+    margin: 0 2rem;
+    flex: 3;
+    align-items: center;
+    transform: translate(0%);
+  }
+  nav .nav-links {
+    display: flex;
+    flex: 3;
+    margin-top: 0;
+  }
+  .nav-link {
+    text-align: right;
+    margin: 0 1rem;
+  }
+  .nav-links .nav-link:first-child {
+    font-weight: 700;
+  }
+  .nav-link > a {
+    padding: 0;
+  }
+  .nav-link > a:hover {
+    color: var(--black);
+    background: transparent;
+    transform: translateY(-1px);
+  }
+  .nav-link > a:active {
+    transform: scale(1.2);
+  }
+  .nav-link a span {
+    margin-right: 0.5rem;
+  }
+  .nav-link .dropdown-list {
+    position: absolute;
+    top: calc(100% + 1rem);
+    right: 0;
+    width: max-content;
+    background-color: white;
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+  }
+  nav .registration {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+  }
+  .registration button {
+    color: hsl(0, 0%, 41%);
+    background: transparent;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: 0.1rem solid hsl(0, 0%, 41%);
+    border-radius: 0.7rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+  }
+  .registration button:hover {
+    color: hsl(0, 0, 8%);
+    border: 0.1rem solid var(--black);
+    transform: translateY(-1px);
+  }
+  .registration button:active {
+    transform: scale(1.2);
+  }
+  .registration button:first-child {
+    border: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1025px) {
+  .nav-link {
+    margin: 0 1.5rem;
+  }
+  .registration button {
+    padding: 0.8rem 1.6rem;
+  }
+}
